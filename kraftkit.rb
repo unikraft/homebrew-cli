@@ -24,16 +24,16 @@ class Kraftkit < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.7.1/kraft_0.7.1_darwin_arm64.tar.gz"
-      sha256 "a7258cbdd2fd6c68ef586d11c3dce415f33c6754ad5be6906725e6261b2c913c"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.7.1/kraft_0.7.1_darwin_arm64.zip"
+      sha256 "1d8f2157281e13e94ab3af5b8172e20a62700f726cdabece73964992584ef3c2"
 
       def install
         bin.install "kraft"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.7.1/kraft_0.7.1_darwin_amd64.tar.gz"
-      sha256 "56481ce7c45db1b28286f984b25a60ff404673ccbda05a85266aa252684db20b"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.7.1/kraft_0.7.1_darwin_amd64.zip"
+      sha256 "d2209dcd829edfe22a1f9105d5f8adc913f0661aa2314ace47645a5f6f48ded5"
 
       def install
         bin.install "kraft"
