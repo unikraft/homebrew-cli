@@ -5,7 +5,7 @@
 class KraftkitStaging < Formula
   desc "Build and use highly customized and ultra-lightweight unikernels."
   homepage "https://kraftkit.sh"
-  version "0.11.0-18-g355f31e9"
+  version "0.11.0-31-g4673508a"
   license "BSD-3-Clause"
 
   depends_on "aarch64-elf-binutils"
@@ -24,8 +24,8 @@ class KraftkitStaging < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-18-g355f31e9/kraft_0.11.0-18-g355f31e9_darwin_amd64.tar.gz"
-      sha256 "fd33a758dcd3a1b111dda653307d56e7bcc9d2ea755438cdaa2f17176d2d388e"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-31-g4673508a/kraft_0.11.0-31-g4673508a_darwin_amd64.tar.gz"
+      sha256 "f566f85df1e493f459b3a3fe7ca4f1c4cb030ec4579068ae5a6e8bd61f79640e"
 
       def install
         bin.install "kraft"
@@ -33,8 +33,8 @@ class KraftkitStaging < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-18-g355f31e9/kraft_0.11.0-18-g355f31e9_darwin_arm64.tar.gz"
-      sha256 "f9f078c61341e80f39dac0d4be8b7b37311ee98521e9465a8b6408a5cfa74062"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-31-g4673508a/kraft_0.11.0-31-g4673508a_darwin_arm64.tar.gz"
+      sha256 "65fcf6c723e766ac008ce74f40b89e985b1c3a3dbd2cc00d337cb0f77bb0370e"
 
       def install
         bin.install "kraft"
@@ -46,8 +46,8 @@ class KraftkitStaging < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-18-g355f31e9/kraft_0.11.0-18-g355f31e9_linux_amd64.tar.gz"
-        sha256 "8c9a5c9bc99fc442b401c0e77038d2d5bd35da7523305140deeaa8b944d4b733"
+        url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-31-g4673508a/kraft_0.11.0-31-g4673508a_linux_amd64.tar.gz"
+        sha256 "fe1edc84ddd4f8bac1fdd4f9fbb47484510e410aa6319840c83ff0c6908b3a2a"
 
         def install
           bin.install "kraft"
@@ -57,8 +57,8 @@ class KraftkitStaging < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-18-g355f31e9/kraft_0.11.0-18-g355f31e9_linux_arm64.tar.gz"
-        sha256 "792433a1fa75b0bef009d736092182949237f890109491198d4fdb30ffd7e29d"
+        url "https://github.com/unikraft/kraftkit/releases/download/v0.11.0-31-g4673508a/kraft_0.11.0-31-g4673508a_linux_arm64.tar.gz"
+        sha256 "16fd89caf6c17311dc647f1f58eb819e7dd050185ab79468c6fa810fc807f3a7"
 
         def install
           bin.install "kraft"
