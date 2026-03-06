@@ -1,5 +1,4 @@
 # Homebrew
 
-Homebrew tap for Unikraft Kraftkit
+Homebrew tap for Unikraft CLI tools.
 
-`brew install unikraft/cli/kraftkit`
