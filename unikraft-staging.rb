@@ -5,21 +5,21 @@
 class UnikraftStaging < Formula
   desc "The official CLI for Unikraft Cloud — deploy and manage unikernels globally in milliseconds."
   homepage "https://unikraft.com"
-  version "0.2.2-staging.4"
+  version "0.2.2-staging.5"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.4/unikraft-cli_0.2.2-staging.4_darwin_amd64.tar.gz"
-      sha256 "e2d13884c32a452a91914ae4ea0674b2968b41939786a4251dc81433694a179f"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.5/unikraft-cli_0.2.2-staging.5_darwin_amd64.tar.gz"
+      sha256 "99e8e779f81dd7f0454a57a5d38ddb291eeeb4830f615b343508e0f39578633e"
 
       define_method(:install) do
         bin.install "unikraft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.4/unikraft-cli_0.2.2-staging.4_darwin_arm64.tar.gz"
-      sha256 "1547fff0ab97784ee552045c46d1206896ca33c05a056dd6fd3a5cb00142a420"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.5/unikraft-cli_0.2.2-staging.5_darwin_arm64.tar.gz"
+      sha256 "de0e0539788028afc28a2ced7f06527a019a3211b19432687c0e3e335a59f529"
 
       define_method(:install) do
         bin.install "unikraft"
@@ -29,15 +29,15 @@ class UnikraftStaging < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.4/unikraft-cli_0.2.2-staging.4_linux_amd64.tar.gz"
-      sha256 "cfba12968e2fd51c2f589103e04ce540497e2bb04143e3dbdbb5154b75aa063f"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.5/unikraft-cli_0.2.2-staging.5_linux_amd64.tar.gz"
+      sha256 "a995a635d412803ce55138975ec2b80b860deed20a14da4c49afc61ad1a691fe"
       define_method(:install) do
         bin.install "unikraft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.4/unikraft-cli_0.2.2-staging.4_linux_arm64.tar.gz"
-      sha256 "cec6df2f8fafa03606894942b6522d90c310db51d2ad8bcb15aa4a552f3bae9b"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.2-staging.5/unikraft-cli_0.2.2-staging.5_linux_arm64.tar.gz"
+      sha256 "4a9ee472dfad5e0cf4d4d4e429ff38e2f95e8408b59cdb48b0e9d00b5fe30d2a"
       define_method(:install) do
         bin.install "unikraft"
       end
