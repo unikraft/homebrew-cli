@@ -5,13 +5,13 @@
 class UnikraftStaging < Formula
   desc "The official CLI for Unikraft Cloud — deploy and manage unikernels globally in milliseconds."
   homepage "https://unikraft.com"
-  version "0.2.3-staging.31"
+  version "0.2.3-staging.32"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.31/unikraft-cli_0.2.3-staging.31_darwin_amd64.tar.gz"
-      sha256 "702f6aea583e169dc79dead5225dc65db98b0c158d6de01171eaa3c74dff6918"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.32/unikraft-cli_0.2.3-staging.32_darwin_amd64.tar.gz"
+      sha256 "72e8b69333d328d881aff43162d89f68c01a6c7557ab8b831cace124965b6187"
 
       define_method(:install) do
         bin.install "unikraft"
@@ -19,8 +19,8 @@ class UnikraftStaging < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.31/unikraft-cli_0.2.3-staging.31_darwin_arm64.tar.gz"
-      sha256 "d000878c7a28f4793692ae218df7355ef3d87ef5912681f315c840c7e2dc9e75"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.32/unikraft-cli_0.2.3-staging.32_darwin_arm64.tar.gz"
+      sha256 "5e7cd1776be2b07653f0ef6681454f4f3ce2805269b0843b4da725c34799c63d"
 
       define_method(:install) do
         bin.install "unikraft"
@@ -31,16 +31,16 @@ class UnikraftStaging < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.31/unikraft-cli_0.2.3-staging.31_linux_amd64.tar.gz"
-      sha256 "0b66fa8aff7d18b252fb87970221680c271952b754186ec20d883cc78e06a330"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.32/unikraft-cli_0.2.3-staging.32_linux_amd64.tar.gz"
+      sha256 "ad4155a849c79f6764e38c1f329a8f9ffe270ed3dca1015c6db55e80d9f0cd20"
       define_method(:install) do
         bin.install "unikraft"
         man1.install Dir["docs/man/*.1.gz"]
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.31/unikraft-cli_0.2.3-staging.31_linux_arm64.tar.gz"
-      sha256 "298894f5f9c67c9dd9a27cee7a77e65cb4fdbf5e13c406834f0f7250a2f3c23a"
+      url "https://github.com/unikraft/cli/releases/download/v0.2.3-staging.32/unikraft-cli_0.2.3-staging.32_linux_arm64.tar.gz"
+      sha256 "5d022a12563258db8a4ed063bb80e06e59e24289cf0965a98f62d412bdf3992d"
       define_method(:install) do
         bin.install "unikraft"
         man1.install Dir["docs/man/*.1.gz"]
