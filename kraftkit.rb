@@ -5,7 +5,7 @@
 class Kraftkit < Formula
   desc "Build and use highly customized and ultra-lightweight unikernels."
   homepage "https://kraftkit.sh"
-  version "0.12.11"
+  version "0.12.12"
   license "BSD-3-Clause"
 
   depends_on "aarch64-elf-binutils"
@@ -24,8 +24,8 @@ class Kraftkit < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.12.11/kraft_0.12.11_darwin_amd64.tar.gz"
-      sha256 "6efa83c352f41187761114250d68389acfc3bbbc8ad4f40faaf40a2d0b91a512"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.12.12/kraft_0.12.12_darwin_amd64.tar.gz"
+      sha256 "bb6c119e1accd24b9636caf6d232605a252cda8883ede6241aea3adf4b94400e"
 
       def install
         bin.install "kraft"
@@ -33,8 +33,8 @@ class Kraftkit < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/kraftkit/releases/download/v0.12.11/kraft_0.12.11_darwin_arm64.tar.gz"
-      sha256 "ac43c3de44a8e35dff9c5b78c6e1634289a576f64ea875d58e7d07db448f45e6"
+      url "https://github.com/unikraft/kraftkit/releases/download/v0.12.12/kraft_0.12.12_darwin_arm64.tar.gz"
+      sha256 "314aaa8d9359020114a4b0900e10ab5639d0f36428d19233ea5cb5fecf8648a8"
 
       def install
         bin.install "kraft"
@@ -46,8 +46,8 @@ class Kraftkit < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/unikraft/kraftkit/releases/download/v0.12.11/kraft_0.12.11_linux_amd64.tar.gz"
-        sha256 "ed8ab48a721ee34eff9dec61b5a9a3c18e9816204a24e2ca185de7be9e57ac65"
+        url "https://github.com/unikraft/kraftkit/releases/download/v0.12.12/kraft_0.12.12_linux_amd64.tar.gz"
+        sha256 "cf9e7ddd249a69d51be7eddff5954d943c0a4474f5ef0f7197874d6ce1e9172b"
 
         def install
           bin.install "kraft"
@@ -57,8 +57,8 @@ class Kraftkit < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/unikraft/kraftkit/releases/download/v0.12.11/kraft_0.12.11_linux_arm64.tar.gz"
-        sha256 "fe56c1aa671a62fffe551524107c8c34f6be56af9957a8eb7614e627a1713063"
+        url "https://github.com/unikraft/kraftkit/releases/download/v0.12.12/kraft_0.12.12_linux_arm64.tar.gz"
+        sha256 "05381f280953f9e5a6ad51e39588ab87ac7ef58228b12b8c0f9fd0f7bf48f013"
 
         def install
           bin.install "kraft"
