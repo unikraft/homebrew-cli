@@ -10,7 +10,7 @@ class Unikraft < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unikraft/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_darwin_amd64.tar.gz"
+      url "https://github.com/unikraft-cloud/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_darwin_amd64.tar.gz"
       sha256 "b8b92139fc18cb4f6ee5d9e7226a4a8927c87a79f26025ce9756af983527d6b6"
 
       define_method(:install) do
@@ -19,7 +19,7 @@ class Unikraft < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unikraft/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_darwin_arm64.tar.gz"
+      url "https://github.com/unikraft-cloud/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_darwin_arm64.tar.gz"
       sha256 "373e0aee92733484b073e5da99129bfda7638555fe8cb7ffb30e85b5dd4c4f0c"
 
       define_method(:install) do
@@ -31,7 +31,7 @@ class Unikraft < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_linux_amd64.tar.gz"
+      url "https://github.com/unikraft-cloud/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_linux_amd64.tar.gz"
       sha256 "df819d8f1ad31c96999d3452ca8fa366d3296b78e189ba5b3a011af487457df3"
       define_method(:install) do
         bin.install "unikraft"
@@ -39,7 +39,7 @@ class Unikraft < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unikraft/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_linux_arm64.tar.gz"
+      url "https://github.com/unikraft-cloud/cli/releases/download/v0.4.1/unikraft-cli_0.4.1_linux_arm64.tar.gz"
       sha256 "a4b753909d19d2f92913a45675f3455bb2f56f6a9f02a973d5f649e90015b64c"
       define_method(:install) do
         bin.install "unikraft"
